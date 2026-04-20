@@ -544,6 +544,10 @@ ul {
   color: var(--grey);
   line-height: 1.55;
 }
+.courses li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
 
 /* ============================================================
    BATCH TIMINGS
@@ -1072,7 +1076,7 @@ a:active {
 }
 
 .logo img {
-  height: 50px;
+  height: 55px;
   width: auto;
   transition: 0.3s ease;
 }
@@ -1083,4 +1087,7 @@ a:active {
   .logo img {
     height: 40px;
   }
+}
+.navbar {
+  padding: 10px 0;
 }
