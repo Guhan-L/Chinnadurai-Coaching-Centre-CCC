@@ -1881,7 +1881,7 @@ ul { list-style: none; }
   justify-content: center;
 
   border-radius: 50%; /* 🔥 makes it round */
-  background: #007bff;
+  background: #1a4d80;
   color: #fff;
 
   text-decoration: none;
@@ -1892,7 +1892,7 @@ ul { list-style: none; }
 
 /* HOVER EFFECT */
 .icon-btn:hover {
-  background: #0056b3;
+  background: #93c5fd;
   transform: scale(1.1);
 }
 
