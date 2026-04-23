@@ -1904,3 +1904,12 @@ ul { list-style: none; }
     font-size: 16px;
   }
 }
+/* YOUTUBE BUTTON */
+.icon-btn.youtube {
+  background: #1a4d80; /* YouTube red */
+}
+
+.icon-btn.youtube:hover {
+  background: #93c5fd;
+}
+
