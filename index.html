@@ -71,7 +71,7 @@
         </h1>
         <p class="hero-subheadline">
           PCM coaching for 11th, 12th, NEET &amp; JEE in Perumbakkam, Chennai.
-          27+ years of building toppers — with proven results, small batches, and a faculty that genuinely cares.
+          28+ years of building toppers — with proven results, small batches, and a faculty that genuinely cares.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Enrol Now</a>
@@ -85,7 +85,7 @@
         </div>
         <div class="trust-badges">
           <div class="trust-badge">
-            <strong>27+</strong>
+            <strong>28+</strong>
             <span>Years Experience</span>
           </div>
           <div class="trust-divider"></div>
@@ -121,7 +121,7 @@
     <div class="container highlights-grid">
       <div class="highlight-card fade-up">
         <div class="highlight-icon">🏆</div>
-        <h3>27+ Years</h3>
+        <h3>28+ Years</h3>
         <p>Decades of classroom excellence producing board toppers and competitive exam achievers year after year.</p>
       </div>
       <div class="highlight-card fade-up delay-1">
@@ -151,7 +151,7 @@
           <img src="images/about.webp" alt="S. Chinnadurai — Founder" loading="lazy"
             onerror="this.src='https://placehold.co/480x560/1a3d6e/ffffff?text=S.+Chinnadurai'" />
           <div class="about-exp-tag">
-            <span class="exp-number">27<sup>+</sup></span>
+            <span class="exp-number">28<sup>+</sup></span>
             <span class="exp-label">Years of<br>Teaching</span>
           </div>
         </div>
@@ -171,7 +171,7 @@
         </p>
         <ul class="about-credentials">
           <li><span class="check">✓</span> M.Sc. Chemistry, B.Ed Qualified</li>
-          <li><span class="check">✓</span> 27+ Years Classroom Experience</li>
+          <li><span class="check">✓</span> 28+ Years Classroom Experience</li>
           <li><span class="check">✓</span> State Board, JEE &amp; NEET Specialist</li>
           <li><span class="check">✓</span> Key Resource Person, Govt. of Tamil Nadu</li>
           <li><span class="check">✓</span> Recognised for Consistent Academic Excellence</li>
@@ -333,7 +333,7 @@
           <div class="why-num">04</div>
           <div class="why-body">
             <h3>Proven Track Record Over Decades</h3>
-            <p>27 years of results aren't luck. It's a system, a method, and a commitment to every student's success.
+            <p>28 years of results aren't luck. It's a system, a method, and a commitment to every student's success.
               Your child joins a legacy.</p>
           </div>
         </div>
@@ -357,7 +357,7 @@
           <div class="faculty-info">
             <h3>S. Chinnadurai</h3>
             <span class="faculty-qual">M.Sc. Chemistry, B.Ed</span>
-            <p>27+ years shaping students into NEET rankers and board toppers. Key Resource Person, Govt. of Tamil Nadu.
+            <p>28+ years shaping students into NEET rankers and board toppers. Key Resource Person, Govt. of Tamil Nadu.
             </p>
           </div>
         </div>
@@ -572,7 +572,7 @@
           <div class="contact-form-card">
             <h3>Send Us a Message</h3>
             <p>We typically respond within a few hours.</p>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" id="contactForm">
+            <form action="https://formspree.io/f/mojyyvjl" method="POST" class="contact-form" id="contactForm">
               <div class="form-group">
                 <label for="name">Student / Parent Name</label>
                 <input type="text" id="name" name="name" placeholder="Full Name" required />
@@ -594,12 +594,54 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="message">Message (Optional)</label>
-                <textarea id="message" name="message" placeholder="Any specific questions or requirements…"
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Any questions, feedbacks or requirements…"
                   rows="4"></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
             </form>
+            <script>
+              document.addEventListener("DOMContentLoaded", function () {
+                const form = document.getElementById("contactForm");
+                const successMessage = document.getElementById("successMessage");
+
+                form.addEventListener("submit", async function (e) {
+                  e.preventDefault();
+
+                  const formData = new FormData(form);
+
+                  try {
+                    const response = await fetch(form.action, {
+                      method: "POST",
+                      body: formData,
+                      headers: {
+                        "Accept": "application/json"
+                      }
+                    });
+
+                    if (response.ok) {
+                      successMessage.style.display = "block";
+                      successMessage.style.opacity = "1";
+                      form.reset();
+
+                      // optional: hide after 5 seconds
+                      setTimeout(() => {
+                        successMessage.style.display = "none";
+                      }, 5000);
+
+                    } else {
+                      alert("Message not sent. Try again.");
+                    }
+
+                  } catch (error) {
+                    alert("Network error. Please check internet.");
+                  }
+                });
+              });
+            </script>
+            <p id="successMessage" style="display:none; color:green;">
+              Your message received successfully! We'll get back to you soon...
+            </p>
           </div>
         </div>
       </div>
