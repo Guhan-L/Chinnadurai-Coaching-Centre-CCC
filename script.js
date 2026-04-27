@@ -153,7 +153,7 @@
     const rect = firstBadge.getBoundingClientRect();
     if (rect.top < window.innerHeight) {
       countersStarted = true;
-      const targets = [27, 1000, 100];
+      const targets = [28, 1000, 100];
       const suffixes = ['+', '+', '%'];
       trustBadges.forEach(function (el, i) {
         animateCount(el, targets[i], suffixes[i]);
